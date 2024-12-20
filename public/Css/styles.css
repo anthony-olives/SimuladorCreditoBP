@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f3de;
+}
+
+header {
+    
+    height: 40px;
+    background-color: #ffdd00; /* Color de fondo similar al del Banco Pichincha */
+    color: #003B5C;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    
+}
+
+.simulador {
+    
+    width: 800px;
+    height: 450px;
+    background-color: white;
+    padding: 14px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+
+h1 {
+    text-align: center;
+    color: #003B5C;
+}
+
+.campo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.campo label {
+    font-size: 11px;
+    display: block;
+}
+
+#simulador-form .campo label[for="monto"] {
+    text-align: left;
+    display: block;
+    font-weight: bold;
+}
+#simulador-form .campo label[for="podras"] {
+    font-size: 10px;
+    text-align: left;
+    display: block;
+}
+
+#simulador-form .campo input#monto {
+    font-size: 30px;
+    height: 70px;
+    width: 50%;
+    border: none;                       /* Elimina todos los bordes */
+    border-bottom: 2px solid #ccc;    /* Agrega solo el borde inferior */
+    outline: none;                      /* Elimina el borde por defecto de enfoque */
+    padding: 10px;                    /* Espaciado interno */
+    border-color: #003B5C;   
+    border-radius:0%                    /* Hace que el input no se redondee */
+}
+
+.campo input {
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.campo button {
+    width: 50%;
+    padding: 10px;
+    background-color: #ffdd00;
+    color: #003B5C;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.campo button:hover {
+    background-color: #005a7c;
+}
+
+.resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    display: none;
+}
+
+footer {
+    background-color: #ffdd00;
+    color: rgb(4, 13, 61);
+    text-align: center;
+    padding: 5px;
+    margin-top: 40px;
+}
+
+
+/* Estilo para las pestañas (tabs) */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    width: 45%;
+    text-align: center;
+}
+
+.tab-button:hover {
+    background-color: #ddd;
+}
+
+/* Estilo para las opciones dentro de cada tab */
+.tab-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tab-option {
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    text-align: center;
+    width: 16%;
+    height: 25px;
+}
+
+.tab-option:hover {
+    background-color: #ddd;
+}
+
+/* Botones "Otro Plazo" */
+button#otro-plazo-meses, button#otro-plazo-dias {
+    width: 20%;
+    padding: 10px;
+    background-color: #f4f4f4;
+    color: black;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    
+}
+
+button#otro-plazo-meses:hover, button#otro-plazo-dias:hover {
+    background-color: #0056b3;
+}
+
+/* Ocultar el contenedor de días por defecto */
+.hidden {
+    display: none;
+}
+
+.campo input, .campo button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#simulador-form .campo label[id="resultado"] {
+    background-color: #ecf8ff;
+    padding: 20px;
+    font-size: 12px;
+    text-align: left;
+}
+
+#simulador-form .campo label span.monto {
+    font-size: 17px; /* Tamaño de fuente más grande para el monto */
+}
+
+#simulador-form .campo label span.interes {
+    color: green; /* Color verde para el interés */
+}
+
+
+.hidden {
+    display: none;
+}
